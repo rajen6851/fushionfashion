@@ -57,18 +57,89 @@
       text-decoration: none;
       font-size: 12px;
     }
+     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url('bg-image.jpg') no-repeat center center/cover;
+      padding: 60px 80px;
+      color: white;
+      height: 500px;
+      position: relative;
+    }
+
+    .hero-text {
+      max-width: 500px;
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .form-box {
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-box h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #1e1e1e;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: #e65500;
+    }
   </style>
 <body>
     
-     <header>
-       <a href="#" class="logo">FAUSINON <br> FASHION</a>
-            <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-     </header>
+     <div class="hero">
+    <div class="hero-text">
+      Consultation,<br>
+      Design,<br>
+      & Marketing
+    </div>
+
+    <div class="form-box">
+      <h3>Get a Free Consultation</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone" required>
+        <button type="submit">Get Started</button>
+      </form>
+    </div>
+  </div>
+
 
      <div class="cards-container">
   <div class="card">
